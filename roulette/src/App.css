@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Righteous&display=swap');
+
+body{
+  background: #F2F2F2;
+  font-family: 'Righteous', cursive;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*options*/
+
+.input-options-enter{
+  transform: translateY(-100%);
+  opacity: 0;
+ }
+ .input-options-active{
+  transform: translateY(0%);
+  opacity: 1;
+  transition: transform 0.5s ease-in , opacity 0.5s ease-in-out;
+ }
+ 
+ .input-options-exit{
+  opacity: 1;
+  }
+ 
+ .input-options-exit-active{
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease-in, opacity 0.5s ease-in-out;
+ }
+
+
+
+.option-enter{
+ transform: rotateX(-90deg);
+ opacity: 0;
+}
+.option-active{
+  transform: rotateX(0deg);
+  transition: transform 0.8s ease-in;
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.option-exit{
+  opacity: 1;
+}
+.option-exit-active{
+  transform: rotateX(-90deg); transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
