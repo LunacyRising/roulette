@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { animated } from 'react-spring'
 
-export const Button = styled.button`
+export const Button = styled(animated.button)`
 font-family: 'Righteous', cursive;
 border: none;
 padding: 10px;

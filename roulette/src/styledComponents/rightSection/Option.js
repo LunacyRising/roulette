@@ -1,7 +1,7 @@
-
+import { animated } from 'react-spring'
 import styled from 'styled-components';
 
-export const Option = styled.li`
+export const Option = styled(animated.li)`
 position: "relative";
 list-style: none;
 border: solid 1px grey;

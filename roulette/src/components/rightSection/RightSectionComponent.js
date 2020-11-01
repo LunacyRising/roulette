@@ -14,7 +14,7 @@ const RightSectionComponent = () => {
   return (
       <>
          <RightSection>
-             <ButtonComponent text={"Editar Opciones"} action={action}/>
+             <ButtonComponent text={"Editar Opciones"} action={action} condition={true}/>
              <InputAndOptionsComponent open={editOptions} close={action}/>
          </RightSection>
       </>

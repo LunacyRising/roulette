@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { animated } from 'react-spring'
 import eliminar from "../../utils/icons/eliminar.svg";
 
-export const DeleteBtn = styled.button`
+export const DeleteBtn = styled(animated.button)`
 position: absolute;
 right: -30px;
 top: 50%;

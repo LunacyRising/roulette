@@ -1,11 +1,11 @@
 import React from "react";
-import { Button } from "../styledComponents/Button";
+import { Button } from "../styledComponents/Button"; 
 
-const ButtonComponent = ( { text, action }) => {
+const ButtonComponent = ( { text, action, style, key }) => {
 
   return (
       <>
-         <Button onClick={action}>
+         <Button style={style} key={key} onClick={action}>
             {text}
          </Button>
       </>
